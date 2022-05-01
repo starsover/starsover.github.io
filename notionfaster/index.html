@@ -6,7 +6,7 @@
 
 <title>最近Notion总是访问不上，看我一招解决！ | 宇黄的神奇小窝</title>
 
-<link rel="shortcut icon" href="https://starsover.github.io/favicon.ico?v=1651395545224">
+<link rel="shortcut icon" href="https://starsover.github.io/favicon.ico?v=1651398092971">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://starsover.github.io/styles/main.css">
@@ -85,7 +85,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1651395545224" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1651398092971" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -115,14 +115,14 @@
                 </div>
                 <div class="post-content">
                     <h1 id="一-修改hosts">一、修改hosts</h1>
-<p>首先，我们得知道你为什么访问不上。</p>
-<p>不是Notion被墙了，就是你的运营商的错！</p>
-<p>1、在Windows文件资源管理器中输入</p>
+<h2 id="1-windows">1、Windows</h2>
+<p>（在进行下文操作之前，您必须保证自己因拥有管理员权限。)</p>
+<p>在Windows文件资源管理器中输入</p>
 <pre><code class="language-html">C:\Windows\System32\drivers\etc\hosts
 </code></pre>
 <p>然后回车</p>
 <p>也许会弹出这么一个界面：</p>
-<figure data-type="image" tabindex="1"><img src="https://starsover.github.io/post-images/1651395484769.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="%E6%9C%80%E8%BF%91Notion%E6%80%BB%E6%98%AF%E8%AE%BF%E9%97%AE%E4%B8%8D%E4%B8%8A%EF%BC%8C%E7%9C%8B%E6%88%91%E4%B8%80%E6%8B%9B%E8%A7%A3%E5%86%B3%EF%BC%81%2033677a3599564966ba37486f4998f90d/Snipaste_2022-04-23_10-20-23.png" alt="Snipaste_2022-04-23_10-20-23.png" loading="lazy"></figure>
 <p>点击“记事本”，带点击”确定”</p>
 <p>然后将这么一串文本输入进去：</p>
 <pre><code class="language-html"># Notion
@@ -271,6 +271,12 @@
 </code></pre>
 <p>如果 Host 失效，那么重新 ping <code>notion.so</code><br>
  得到新 IP 即可。</p>
+<h2 id="2-android">2、Android</h2>
+<p>（在进行下文操作之前，您必须保证自己拥有root权限。）</p>
+<p>打开：</p>
+<pre><code class="language-jsx">/system/etc/hosts
+</code></pre>
+<p>那么，接下来的步骤就和Windows的一样了！</p>
 <h1 id="二-修改dns">二、<strong><strong>修改DNS</strong></strong></h1>
 <p>将你的 DNS 修改为以下 IP 即可：</p>
 <pre><code>119.29.29.29
