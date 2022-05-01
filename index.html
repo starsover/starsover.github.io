@@ -1,173 +1,236 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <title>宇黄的神奇小窝</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://starsover.github.io/favicon.ico?v=1651395545224">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://starsover.github.io/favicon.ico?v=1651395262387">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://starsover.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="">
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://starsover.github.io">
-        <img src="https://starsover.github.io/images/avatar.png?v=1651395262387" class="site-logo">
-        <h1 class="site-title">宇黄的神奇小窝</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            宇黄的神奇小窝
+        </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/about" class="site-nav">
-            关于
-          </a>
-        
-      
-        
-          <a href="https://starsover.github.io/log" class="site-nav" target="_blank">
-            更新日志
-          </a>
-        
-      
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://starsover.github.io/log" class="menu gt-a-link" target="_blank">
+                            更新日志
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1651395545224" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
     </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://starsover.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</nav>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://starsover.github.io/fuck 2345 360/">
-                  <h2 class="post-title">【置顶】别再去下什么2345、360了，这些才是装机必备！</h2>
-                </a>
-                <div class="post-date">
-                  2022-03-26
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                            <span class="sticky-top-flag gt-bg-accent-color-first">置顶</span>
+                        
+                        <a href="https://starsover.github.io/fuck 2345 360/">
+                            <span class="post-title gt-c-content-color-first">【置顶】别再去下什么2345、360了，这些才是装机必备！</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2022-03-26 ·
+                        </time>
+                        
+                            <a href="https://starsover.github.io/wHBlC8vYK/" class="post-tag">
+                                # 软件
+                            </a>
+                        
+                            <a href="https://starsover.github.io/ROTGWTooFX/" class="post-tag">
+                                # 推荐
+                            </a>
+                        
+                    </div>
                 </div>
-                <div class="post-abstract">
-                  
+                
+                    <a href="https://starsover.github.io/fuck 2345 360/" class="post-feature-image"
+                       style="background-image: url('https://starsover.github.io/post-images/fuck 2345 360.png')">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                            <span class="sticky-top-flag gt-bg-accent-color-first">置顶</span>
+                        
+                        <a href="https://starsover.github.io/practical/">
+                            <span class="post-title gt-c-content-color-first">【置顶】油猴脚本推荐</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2022-03-19 ·
+                        </time>
+                        
+                            <a href="https://starsover.github.io/ROTGWTooFX/" class="post-tag">
+                                # 推荐
+                            </a>
+                        
+                    </div>
                 </div>
-              </div>
-              
-                <a class="right" href="https://starsover.github.io/fuck 2345 360/">
-                  <div class="feature-container" style="background-image: url('https://starsover.github.io/post-images/fuck 2345 360.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://starsover.github.io/practical/">
-                  <h2 class="post-title">【置顶】油猴脚本推荐</h2>
-                </a>
-                <div class="post-date">
-                  2022-03-19
+                
+                    <a href="https://starsover.github.io/practical/" class="post-feature-image"
+                       style="background-image: url('https://starsover.github.io/post-images/practical.png')">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://starsover.github.io/notionfaster/">
+                            <span class="post-title gt-c-content-color-first">最近Notion总是访问不上，看我一招解决！</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2022-05-01 ·
+                        </time>
+                        
+                            <a href="https://starsover.github.io/U04WkT7Up/" class="post-tag">
+                                # notion
+                            </a>
+                        
+                            <a href="https://starsover.github.io/pSxMx-Ouv/" class="post-tag">
+                                # 飞机
+                            </a>
+                        
+                    </div>
                 </div>
-                <div class="post-abstract">
-                  
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://starsover.github.io/male/">
+                            <span class="post-title gt-c-content-color-first">在经历了数次数据丢失后，我明白了这些。</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2022-03-20 ·
+                        </time>
+                        
+                            <a href="https://starsover.github.io/vA6LQ-lcM/" class="post-tag">
+                                # 觉悟
+                            </a>
+                        
+                    </div>
                 </div>
-              </div>
-              
-                <a class="right" href="https://starsover.github.io/practical/">
-                  <div class="feature-container" style="background-image: url('https://starsover.github.io/post-images/practical.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://starsover.github.io/male/">
-                  <h2 class="post-title">在经历了数次数据丢失后，我明白了这些。</h2>
-                </a>
-                <div class="post-date">
-                  2022-03-20
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-                <a class="right" href="https://starsover.github.io/male/">
-                  <div class="feature-container" style="background-image: url('https://starsover.github.io/post-images/male.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://starsover.github.io/fanchuqu/">
-                  <h2 class="post-title">如何在中国大陆国内访问被墙的网站？</h2>
-                </a>
-                <div class="post-date">
-                  2022-03-01
-                </div>
-                <div class="post-abstract">
-                  <h1 id="一vpnssssr">一.VPN/SS/SSR</h1>
+                
+                    <a href="https://starsover.github.io/male/" class="post-feature-image"
+                       style="background-image: url('https://starsover.github.io/post-images/male.png')">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://starsover.github.io/fanchuqu/">
+                            <span class="post-title gt-c-content-color-first">如何在中国大陆国内访问被墙的网站？</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <h1 id="一vpnssssr">一.VPN/SS/SSR</h1>
 <h2 id="1-vpn">① VPN（⭐⭐⭐）</h2>
 <p>VPN属于远程访问技术，简单地说就是利用公用网络架设专用网络。例如某公司员工出差到外地，他想访问企业内网的服务器资源，这种访问就属于远程访问。</p>
 <p>使用：去Google play 下载<strong>可靠</strong>的VPN软件（但要成功访问Google play，你需要使用VPN/SS/SSR，这就形成了一个闭环，想要跳出这个闭环，你需要自己想办法。<s>或者买一张去美国的机票。</s>）</p>
@@ -176,49 +239,69 @@
 <h2 id="3ssr">③SSR（⭐）</h2>
 <p>在SS的基础上增加了一些数据混淆方式</p>
 
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2022-03-01 ·
+                        </time>
+                        
+                            <a href="https://starsover.github.io/pSxMx-Ouv/" class="post-tag">
+                                # 飞机
+                            </a>
+                        
+                            <a href="https://starsover.github.io/etpCkqHOan/" class="post-tag">
+                                # 外网
+                            </a>
+                        
+                    </div>
                 </div>
-              </div>
-              
-                <a class="right" href="https://starsover.github.io/fanchuqu/">
-                  <div class="feature-container" style="background-image: url('https://starsover.github.io/post-images/fanchuqu.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
-
-          <div class="pagination-container">
-  
-  
+                
+                    <a href="https://starsover.github.io/fanchuqu/" class="post-feature-image"
+                       style="background-image: url('https://starsover.github.io/post-images/fanchuqu.png')">
+                    </a>
+                
+            </div>
+        
+    </div>
 </div>
 
-        </div>
-      </div>
+        <div class="pagination-container">
+    
+    
+</div>
+
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
     </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://starsover.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
-
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
-
-
-
-
-  </body>
+    </div>
+</div>
+</body>
 </html>

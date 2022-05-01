@@ -1,0 +1,373 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>最近Notion总是访问不上，看我一招解决！ | 宇黄的神奇小窝</title>
+
+<link rel="shortcut icon" href="https://starsover.github.io/favicon.ico?v=1651395545224">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://starsover.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            宇黄的神奇小窝
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://starsover.github.io/log" class="menu gt-a-link" target="_blank">
+                            更新日志
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1651395545224" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    最近Notion总是访问不上，看我一招解决！
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2022-05-01 ·
+                    </time>
+                    
+                        <a href="https://starsover.github.io/U04WkT7Up/" class="post-tags">
+                            # notion
+                        </a>
+                    
+                        <a href="https://starsover.github.io/pSxMx-Ouv/" class="post-tags">
+                            # 飞机
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <h1 id="一-修改hosts">一、修改hosts</h1>
+<p>首先，我们得知道你为什么访问不上。</p>
+<p>不是Notion被墙了，就是你的运营商的错！</p>
+<p>1、在Windows文件资源管理器中输入</p>
+<pre><code class="language-html">C:\Windows\System32\drivers\etc\hosts
+</code></pre>
+<p>然后回车</p>
+<p>也许会弹出这么一个界面：</p>
+<figure data-type="image" tabindex="1"><img src="https://starsover.github.io/post-images/1651395484769.png" alt="" loading="lazy"></figure>
+<p>点击“记事本”，带点击”确定”</p>
+<p>然后将这么一串文本输入进去：</p>
+<pre><code class="language-html"># Notion
+104.19.101.15 notion.so
+104.19.92.15 notion.so
+104.19.31.15 notion.so
+104.19.7.15 notion.so
+104.19.72.15 notion.so
+104.19.55.15 notion.so
+104.20.242.15 notion.so
+104.20.235.15 notion.so
+104.20.239.15 notion.so
+172.65.212.15 notion.so
+172.65.70.15 notion.so
+172.67.17.15 notion.so
+104.19.20.15 notion.so
+104.19.191.15 notion.so
+104.19.38.15 notion.so
+104.16.24.15 notion.so
+104.19.21.15 notion.so
+104.19.57.15 notion.so
+104.19.3.15 notion.so
+104.18.153.15 notion.so
+104.19.68.15 notion.so
+104.18.135.15 notion.so
+104.19.86.15 notion.so
+162.159.193.15 notion.so
+162.159.13.15 notion.so
+104.18.235.15 notion.so
+104.19.105.15 notion.so
+162.159.41.15 notion.so
+198.41.193.15 notion.so
+104.18.185.15 notion.so
+104.20.88.15 notion.so
+104.20.169.15 notion.so
+104.20.81.15 notion.so
+104.19.230.15 notion.so
+104.20.236.15 notion.so
+104.19.216.15 notion.so
+104.20.195.15 notion.so
+172.65.37.15 notion.so
+172.65.109.15 notion.so
+172.65.110.15 notion.so
+172.65.2.15 notion.so
+172.65.31.15 notion.so
+172.65.252.15 notion.so
+172.65.43.15 notion.so
+172.65.237.15 notion.so
+172.65.238.15 notion.so
+172.67.18.15 notion.so
+104.19.101.15 www.notion.so
+104.19.92.15 www.notion.so
+104.19.31.15 www.notion.so
+104.19.7.15 www.notion.so
+104.19.72.15 www.notion.so
+104.19.55.15 www.notion.so
+104.20.242.15 www.notion.so
+104.20.235.15 www.notion.so
+104.20.239.15 www.notion.so
+172.65.212.15 www.notion.so
+172.65.70.15 www.notion.so
+172.67.17.15 www.notion.so
+104.19.20.15 www.notion.so
+104.19.191.15 www.notion.so
+104.19.38.15 www.notion.so
+104.16.24.15 www.notion.so
+104.19.21.15 www.notion.so
+104.19.57.15 www.notion.so
+104.19.3.15 www.notion.so
+104.18.153.15 www.notion.so
+104.19.68.15 www.notion.so
+104.18.135.15 www.notion.so
+104.19.86.15 www.notion.so
+162.159.193.15 www.notion.so
+162.159.13.15 www.notion.so
+104.18.235.15 www.notion.so
+104.19.105.15 www.notion.so
+162.159.41.15 www.notion.so
+198.41.193.15 www.notion.so
+104.18.185.15 www.notion.so
+104.20.88.15 www.notion.so
+104.20.169.15 www.notion.so
+104.20.81.15 www.notion.so
+104.19.230.15 www.notion.so
+104.20.236.15 www.notion.so
+104.19.216.15 www.notion.so
+104.20.195.15 www.notion.so
+172.65.37.15 www.notion.so
+172.65.109.15 www.notion.so
+172.65.110.15 www.notion.so
+172.65.2.15 www.notion.so
+172.65.31.15 www.notion.so
+172.65.252.15 www.notion.so
+172.65.43.15 www.notion.so
+172.65.237.15 www.notion.so
+172.65.238.15 www.notion.so
+172.67.18.15 www.notion.so
+172.67.18.15 notion.so
+104.19.101.15 msgstore.www.notion.so
+104.19.92.15 msgstore.www.notion.so
+104.19.31.15 msgstore.www.notion.so
+104.19.7.15 msgstore.www.notion.so
+104.19.72.15 msgstore.www.notion.so
+104.19.55.15 msgstore.www.notion.so
+104.20.242.15 msgstore.www.notion.so
+104.20.235.15 msgstore.www.notion.so
+104.20.239.15 msgstore.www.notion.so
+172.65.212.15 msgstore.www.notion.so
+172.65.70.15 msgstore.www.notion.so
+172.67.17.15 msgstore.www.notion.so
+104.19.20.15 msgstore.www.notion.so
+104.19.191.15 msgstore.www.notion.so
+104.19.38.15 msgstore.www.notion.so
+104.16.24.15 msgstore.www.notion.so
+104.19.21.15 msgstore.www.notion.so
+104.19.57.15 msgstore.www.notion.so
+104.19.3.15 msgstore.www.notion.so
+104.18.153.15 msgstore.www.notion.so
+104.19.68.15 msgstore.www.notion.so
+104.18.135.15 msgstore.www.notion.so
+104.19.86.15 msgstore.www.notion.so
+162.159.193.15 msgstore.www.notion.so
+162.159.13.15 msgstore.www.notion.so
+104.18.235.15 msgstore.www.notion.so
+104.19.105.15 msgstore.www.notion.so
+162.159.41.15 msgstore.www.notion.so
+198.41.193.15 msgstore.www.notion.so
+104.18.185.15 msgstore.www.notion.so
+104.20.88.15 msgstore.www.notion.so
+104.20.169.15 msgstore.www.notion.so
+104.20.81.15 msgstore.www.notion.so
+104.19.230.15 msgstore.www.notion.so
+104.20.236.15 msgstore.www.notion.so
+104.19.216.15 msgstore.www.notion.so
+104.20.195.15 msgstore.www.notion.so
+172.65.37.15 msgstore.www.notion.so
+172.65.109.15 msgstore.www.notion.so
+172.65.110.15 msgstore.www.notion.so
+172.65.2.15 msgstore.www.notion.so
+172.65.31.15 msgstore.www.notion.so
+172.65.252.15 msgstore.www.notion.so
+172.65.43.15 msgstore.www.notion.so
+172.65.237.15 msgstore.www.notion.so
+172.65.238.15 msgstore.www.notion.so
+172.67.18.15 msgstore.www.notion.so
+</code></pre>
+<p>如果 Host 失效，那么重新 ping <code>notion.so</code><br>
+ 得到新 IP 即可。</p>
+<h1 id="二-修改dns">二、<strong><strong>修改DNS</strong></strong></h1>
+<p>将你的 DNS 修改为以下 IP 即可：</p>
+<pre><code>119.29.29.29
+114.114.114.114
+</code></pre>
+<h1 id="三-cloufare-ip-段">三、<strong><strong>Cloufare IP 段</strong></strong></h1>
+<pre><code>108.162.236.1/24 联通 走美国
+172.64.32.1/24 移动 走香港
+104.16.160.1/24 电信 走美国洛杉矶
+172.64.0.0/24 电信 美国旧金山
+104.20.157.0/24 联通 走日本
+104.28.14.0/24 移动 走新加坡
+</code></pre>
+<p>104.16.160.1/24 比如这个 IP 段，是包含了104.16.160.1～～104.16.160.255 之间的所有 IP，你得 ping 这所有 IP 看他们的连接怎样，然后筛选出最好的添加到Hosts 里，windows 推荐一个免费的绿色软件 --- pinginfoview 可以直接一口气ping 这所有 IP。--------- Literal Tomb</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://starsover.github.io/fuck 2345 360/" class="post-title gt-a-link">
+                    【置顶】别再去下什么2345、360了，这些才是装机必备！
+                </a>
+            </div>
+        
+
+        
+            <span id="/notionfaster//" class="leancloud_visitors" data-flag-title="最近Notion总是访问不上，看我一招解决！">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'hnWCb6XoqfCC1vLmCtwpHRRx-MdYXbMMI',
+		appKey: '1LgFMkETs85XslB62gdpit8T',
+		avatar: 'robohash',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '给这个傻子提点无脑的建议吧！',
+		visitor: true,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://starsover.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
